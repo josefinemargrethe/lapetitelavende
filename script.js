@@ -52,7 +52,7 @@ function visRetter() {
                         <div class="item-b item-retter">
                         <h2>${ret.navn}</h2>
                         <p>${ret.fransk}</p>
-                        <p><i>Pris: <strong>${ret.pris},-</strong></i></p>
+                        <p>${ret.pris},-</p>
                         </div>
                     </article>
                 `;
@@ -70,7 +70,7 @@ function visRetter() {
                                 <div class="item-b">
                                 <h2>${ret.navn}</h2>
                                 <p>${ret.dansk}.</p>
-                                <p><i>Pris: <strong>${ret.pris}</strong>,-</i></p>
+                                <p>${ret.pris},-</p>
                                 </div>
                             </article>
                                `;

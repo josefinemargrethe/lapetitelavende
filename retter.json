@@ -20,14 +20,14 @@
         "id": "3",
         "navn": "Tartare de boeuf",
         "kategori": "les entrees",
-        "pris": "140",
+        "pris": "135",
         "fransk": "Steak de boeuf fait maison avec sésame, poireaux et jaune d'oeuf cru",
         "dansk": "Hjemmerørt bøftatar med sesam, porrer og rå æggeblomme",
         "billede": "tartare"
 },
     {
         "id": "4",
-        "navn": "Salad Nicoise",
+        "navn": "Salade Niçoise",
         "kategori": "les entrees",
         "pris": "130",
         "fransk": "Légumes biologiques, thon grillé, olives niçoise, anchois, œufs, tomates et poivrons",
@@ -47,7 +47,7 @@
         "id": "6",
         "navn": "Assiette de saucisses et Fromage de Chèvre e Brie",
         "kategori": "les plats principaux",
-        "pris": "150",
+        "pris": "195",
         "fransk": "Assortiment de saucisses, pâté et fromage de chèvre et brie avec divers accessoires",
         "dansk": "Assorterede pølser, paté og gedeost samt brie med forskelligt tilbehør",
         "billede": "platte"
@@ -56,7 +56,7 @@
         "id": "7",
         "navn": "Coq au Vin blanc",
         "kategori": "les plats principaux",
-        "pris": "155",
+        "pris": "210",
         "fransk": "Un classique simple mais inévitable composé de champignons, oignons, vin blanc, herbes et un coq",
         "dansk": "En simpel, men uundgåelig klassiker bestående af svampe, løg, hvidvin, urter og en hane",
         "billede": "coq"
@@ -65,7 +65,7 @@
         "id": "8",
         "navn": "Confit de Canard",
         "kategori": "les plats principaux",
-        "pris": "150",
+        "pris": "205",
         "fransk": "Un classique de la cuisine française. Vivaces cuites au canard servies avec salade et frites grossières",
         "dansk": "En klassiker fra det franske køkken. Andelår kogt i andefedt serveret med salat og grove fritter",
         "billede": "confit"
