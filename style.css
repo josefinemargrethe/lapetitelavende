@@ -85,11 +85,19 @@ li {
 }
 */
 
-#logo {
+.iphonelogo {
     position: absolute;
-    top: 2vw;
-    left: 25vw;
-    max-width: 50%;
+    top: 20vw;
+    left: 30vw;
+    max-width: 70%;
+}
+
+.ipadlogo {
+    display: none;
+}
+
+#logo {
+    display: none;
 }
 
 /************* STREG ****************/
@@ -117,11 +125,11 @@ li {
 */
 
 
-#reservationer img {
+#om img {
     max-width: 150px;
 }
 
-.reservation-container {
+.om-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 10px;
@@ -161,16 +169,14 @@ li {
 }
 
 
-#reservationer p {
+#om p {
     line-height: 1.5;
 }
 
 h1 {
-    margin-top: 0;
     font-family: 'peignot';
     font-weight: 300;
-    font-size: 3em;
-    color: black;
+    font-size: 2em;
 }
 
 .retter {
@@ -204,17 +210,13 @@ h2 {
 }
 
 button {
-    padding: 8px 20px;
+    padding: 8px 4px;
     margin-bottom: 5em;
     font-family: 'Helvetica';
     font-weight: 300;
     background-color: none;
     border: 1px solid black;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #b1b1ea;
 }
 
 p {
@@ -285,19 +287,24 @@ footer {
     font-weight: 200;
     font-size: 0.8rem;
     background-color: #8c76a8;
-    height: 30vw;
+    height: 55vw;
     color: white;
 }
 
-footer section {
+#footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1vw 2vw;
 }
 
 footer div {
-    margin-top: 5vw;
     line-height: 2;
+}
+
+footer h1 {
+    color: white;
+    padding: 10px 0 0 20px;
+
 }
 
 
@@ -348,12 +355,28 @@ footer div {
         display: block;
     }
 
+    .iphonelogo {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .ipadlogo {
+        display: block;
+        position: absolute;
+        top: 25vw;
+        left: 50vw;
+        max-width: 50%;
+    }
+
     .data-container {
         grid-template-columns: 1fr;
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 2em;
     }
 
     /*** DESKTOP MENU ****/
@@ -379,6 +402,21 @@ footer div {
     nav a {
         padding: 0 1rem;
     }
+
+    button {
+        padding: 8px 20px;
+        margin-bottom: 5em;
+        font-family: 'Helvetica';
+        font-weight: 300;
+        background-color: none;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #b1b1ea;
+    }
+
 
     .singleret {
         display: grid;
@@ -456,10 +494,19 @@ footer div {
     }
 
     #logo {
+        display: block;
         position: absolute;
         top: 2vw;
         left: 25vw;
         max-width: 50%;
+    }
+
+    .iphonelogo {
+        display: none;
+    }
+
+    .ipadlogo {
+        display: none;
     }
 
 

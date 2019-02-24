@@ -11,12 +11,9 @@ const modtager = document.querySelector(".data-container");
 
 async function hentJson() {
 
-    const myJson = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1DuIzQzqIaFush7ICjKirHxTmIQQsDpooP3GrArq7rj4");
+    const jsonData = await fetch("retter.json");
 
-    console.log(myJson);
-
-    alleRetter = await myJson.json();
-    console.log(alleRetter);
+    alleRetter = await jsonData.json();
 
     visRetter();
 }

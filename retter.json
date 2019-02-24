@@ -1,0 +1,91 @@
+[{
+        "id": "1",
+        "navn": "Les Escargots au Berre",
+        "kategori": "les entrees",
+        "pris": "110",
+        "fransk": "Escargots servis dans la coquille avec du beurre, des tomates et de l'ail",
+        "dansk": "Snegle serveret i skallen med smør, tomater og hvidløg",
+        "billede": "escargots"
+},
+    {
+        "id": "2",
+        "navn": "Moules à la Marinière",
+        "kategori": "les entrees",
+        "pris": "110",
+        "fransk": "Moules au vin blanc, beurre, persil et échalotes",
+        "dansk": "Muslinger kogt i hvidvin, smør, persille og skalotteløg",
+        "billede": "moules"
+},
+    {
+        "id": "3",
+        "navn": "Tartare de boeuf",
+        "kategori": "les entrees",
+        "pris": "140",
+        "fransk": "Steak de boeuf fait maison avec sésame, poireaux et jaune d'oeuf cru",
+        "dansk": "Hjemmerørt bøftatar med sesam, porrer og rå æggeblomme",
+        "billede": "tartare"
+},
+    {
+        "id": "4",
+        "navn": "Salad Nicoise",
+        "kategori": "les entrees",
+        "pris": "130",
+        "fransk": "Légumes biologiques, thon grillé, olives niçoise, anchois, œufs, tomates et poivrons",
+        "dansk": "Økologiske grøntsager, lynstegt tun, niçoise oliven, ansjoser, æg og tomater",
+        "billede": "nicoise"
+},
+    {
+        "id": "5",
+        "navn": "Asperges vertes à la hollandaise",
+        "kategori": "les entrees",
+        "pris": "110",
+        "fransk": "Asperges vertes avec sauce hollandaise maison. Servi avec des miettes et des fleurs comestibles assorties",
+        "dansk": "Grønne asparges med hjemmelavet hollandaise sovs. Serveret med krymmel og assorterede spiselige blomster",
+        "billede": "asperges"
+},
+    {
+        "id": "6",
+        "navn": "Assiette de saucisses et Fromage de Chèvre e Brie",
+        "kategori": "les plats principaux",
+        "pris": "150",
+        "fransk": "Assortiment de saucisses, pâté et fromage de chèvre et brie avec divers accessoires",
+        "dansk": "Assorterede pølser, paté og gedeost samt brie med forskelligt tilbehør",
+        "billede": "platte"
+},
+    {
+        "id": "7",
+        "navn": "Coq au Vin blanc",
+        "kategori": "les plats principaux",
+        "pris": "155",
+        "fransk": "Un classique simple mais inévitable composé de champignons, oignons, vin blanc, herbes et un coq",
+        "dansk": "En simpel, men uundgåelig klassiker bestående af svampe, løg, hvidvin, urter og en hane",
+        "billede": "coq"
+},
+    {
+        "id": "8",
+        "navn": "Confit de Canard",
+        "kategori": "les plats principaux",
+        "pris": "150",
+        "fransk": "Un classique de la cuisine française. Vivaces cuites au canard servies avec salade et frites grossières",
+        "dansk": "En klassiker fra det franske køkken. Andelår kogt i andefedt serveret med salat og grove fritter",
+        "billede": "confit"
+},
+    {
+        "id": "9",
+        "navn": "Tarte au chocolat",
+        "kategori": "les desserts",
+        "pris": "90",
+        "fransk": "Tarte au chocolat française classique faite maison et saupoudrée de cacao",
+        "dansk": "Fyldig hjemmelavet klassisk fransk chokoladetærte drysset med kakaopulver",
+        "billede": "tarte"
+},
+    {
+        "id": "10",
+        "navn": "Crème Brûlée à la Vanille",
+        "kategori": "les desserts",
+        "pris": "85",
+        "fransk": "Crème brûlée à la vanille traditionnelle avec des baies assorties",
+        "dansk": "Traditionel crème brûlée lavet på vanilje serveret med forskellige bær",
+        "billede": "cremebrulee"
+}
+]
