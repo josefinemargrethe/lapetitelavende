@@ -156,10 +156,6 @@ li {
     justify-content: center;
 }
 
-.michelin {
-    text-align: center;
-}
-
 
 #om {
     hyphens: manual;
@@ -330,7 +326,7 @@ footer h1 {
 }
 
 #myBtn:hover {
-    background-color: #b1b1ea;
+    background-color: #bbaad0;
 }
 
 .hide {
@@ -371,12 +367,13 @@ footer h1 {
         display: grid;
     }
 
-    .img-item:nth-child(1) {
-        justify-self: end;
-    }
-
     .grid-item:nth-child(2) {
         align-items: center;
+        display: block;
+    }
+
+    #om img {
+        max-width: 100px;
     }
 
     .data-container {
@@ -422,7 +419,7 @@ footer h1 {
     }
 
     button:hover {
-        background-color: #b1b1ea;
+        background-color: #bbaad0;
     }
 
 
@@ -494,7 +491,8 @@ footer h1 {
         position: relative;
         width: 100vw;
         height: 48.25vw;
-        background: #b1b1ea;
+        background: #bbaad0;
+        /*        background: #b1b1ea;*/
         /*    background: #8c76a8;*/
         opacity: 0.8;
         margin-bottom: 10vw;
@@ -523,6 +521,16 @@ footer h1 {
 
     /************************ GRID ***************************/
 
+
+    .grid-item:nth-child(2) {
+        align-items: center;
+        grid-column-gap: 20px;
+        display: grid;
+    }
+
+    #om img {
+        max-width: 150px;
+    }
 
     .data-container {
         grid-template-columns: repeat(2, 1fr);
