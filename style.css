@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'peignot';
+    src: url('font/peignot-webfont.woff2') format('woff2'),
+        url('font/peignot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/***** FÆLLES MENU *****/
+nav {
+    font-family: 'peignot';
+    color: black;
+    position: absolute;
+    top: 0;
+}
+
+a {
+    color: black;
+    font-family: 'peignot';
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color: lavender;
+}
+
+/*
+:target {
+    color: black;
+}
+*/
+
+/*** BURGER-MENU ****/
+.hidden {
+    /*    display: none;*/
+    transform: translateX(-110%)
+}
+
+#burgermenu {
+    padding: 1vw;
+}
+
+#menuknap {
+    font-size: 3rem;
+
+}
+
+li {
+    list-style-type: none;
+
+}
+
+#menu {
+    transition: transform 0.7s;
+}
+
+#desktopmenu {
+    display: none;
+}
+
+/************* COVER BILLEDE/ANIMATION ****************/
+
+.ipadcover {
+    display: none;
+}
+
+/*
+.overlay {
+    position: relative;
+    width: 100vw;
+    height: 48.25vw;
+    background: #b1b1ea;
+        background: #8c76a8;
+    opacity: 0.8;
+    margin-bottom: 10vw;
+}
+*/
+
+#logo {
+    position: absolute;
+    top: 2vw;
+    left: 25vw;
+    max-width: 50%;
+}
+
+/************* STREG ****************/
+
+.streg {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.streg img {
+    max-width: 50vw;
+    /*    max-height: 40px;*/
+}
+
+/*
+
+.header {
+    height: 250px;
+    width: 100;
+    line-height: 250px;
+    background: #ffd769;
+    text-align: center;
+}
+*/
+
+
+#reservationer img {
+    max-width: 150px;
+}
+
+.reservation-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    margin: 10vw 10vw;
+
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+.grid-item:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: 3;
+    justify-content: center;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 4;
+    justify-content: center;
+}
+
+.grid-item:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: 4;
+    grid-row: 2;
+    justify-content: center;
+}
+
+
+#reservationer p {
+    line-height: 1.5;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'peignot';
+    font-weight: 300;
+    font-size: 3em;
+    color: black;
+}
+
+.retter {
+    border: 1px black solid;
+    margin: 1em;
+}
+
+.item-retter {
+    padding: 10px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.valgt {
+    background-color: #8c76a8;
+    transition: ease-in 0.5s;
+}
+
+.transition {
+    transition: ease-in 2s;
+
+}
+
+h2 {
+    /*    text-align: center;*/
+    color: #8c76a8;
+    font-family: 'Helvetica';
+    font-weight: 300;
+}
+
+button {
+    padding: 8px 20px;
+    margin-bottom: 5em;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    background-color: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b1b1ea;
+}
+
+p {
+    font-family: 'Helvetica';
+    font-weight: 300;
+
+}
+
+h3 {
+    font-family: 'Helvetica';
+    font-weight: 600;
+
+}
+
+#popup {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(140, 118, 168, 0.36);
+    overflow: scroll;
+    display: none;
+}
+
+#indhold {
+    min-height: 50vh;
+    background-color: white;
+    width: 75vw;
+    margin: 4rem auto;
+}
+
+.singleret {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#luk {
+    position: fixed;
+    right: 2rem;
+    top: 0.5rem;
+}
+
+#luk button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: #8c76a8;
+    cursor: pointer;
+}
+
+.singleret {
+    padding: 1vw;
+}
+
+.singleret img {
+    max-width: 70%;
+}
+
+.data-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    margin: 0 10vw;
+}
+
+
+footer {
+    font-family: 'Helvetica';
+    font-weight: 200;
+    font-size: 0.8rem;
+    background-color: #8c76a8;
+    height: 30vw;
+    color: white;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1vw 2vw;
+}
+
+footer div {
+    margin-top: 5vw;
+    line-height: 2;
+}
+
+
+/*********** GÅ TIL TOP KNAP  **************/
+
+
+#myBtn {
+    position: fixed;
+    bottom: -30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #8c76a8;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.myBtn {
+    display: none;
+}
+
+#myBtn:hover {
+    background-color: #b1b1ea;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+@media only screen and (min-width:600px) {
+    .iphonecover {
+        display: none;
+    }
+
+    .ipadcover {
+        display: block;
+    }
+
+    .data-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    /*** DESKTOP MENU ****/
+
+
+    #desktopmenu {
+        display: block;
+    }
+
+    #burgermenu {
+        display: none;
+    }
+
+    nav {
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 1rem 0;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 0 1rem;
+    }
+
+    .singleret {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item-a {
+        grid-row: 1;
+    }
+
+    .item-b {
+        grid-row: 1;
+    }
+
+    footer {
+        height: 20vw;
+    }
+
+    .retter {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    /************************ ANIMATION ***************************/
+
+    .ipadcover {
+        display: none;
+    }
+
+    .iphonecover {
+        display: none;
+    }
+
+    .paris_kf {
+        animation-name: paris_kf;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: steps(18);
+        /*    overflow: hidden;*/
+    }
+
+    @keyframes paris_kf {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: -1800% 0%;
+        }
+    }
+
+    .parissprite {
+        position: absolute;
+        top: -10vw;
+        left: 0vw;
+        background-size: 1900% 100%;
+        width: 100vw;
+        height: 56.25vw;
+        background-image: url(billeder/parisspriteny.svg);
+    }
+
+    .overlay {
+        position: relative;
+        width: 100vw;
+        height: 48.25vw;
+        background: #b1b1ea;
+        /*    background: #8c76a8;*/
+        opacity: 0.8;
+        margin-bottom: 10vw;
+    }
+
+    #logo {
+        position: absolute;
+        top: 2vw;
+        left: 25vw;
+        max-width: 50%;
+    }
+
+
+    /************************ GRID ***************************/
+
+
+    .data-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        height: 15vw;
+    }
+
+    .retter {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+}

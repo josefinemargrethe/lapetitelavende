@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="hero_container">
+            <div class="parissprite paris_kf"></div>
+            <img src="billeder/ipad-cover.jpg" class="ipadcover" alt="Paris">
+            <img src="billeder/iphone-cover.jpg" class="iphonecover" alt="Paris">
+            <div class="overlay"></div>
+            <div id="logo"><img src="billeder/lavendel%20logo-02.png" alt="logo"></div>
+        </div>
+        <div id="popup">
+            <div id="luk">
+                <button>✕</button>
+            </div>
+            <div id="indhold"></div>
+        </div>
+
+        <nav id="nav">
+            <div id="burgermenu">
+                <div id="menuknap">☰</div>
+                <div id="menu" class="hidden">
+                    <ul>
+                        <li><a href="#reservationer">reservationer</a></li>
+                        <li><a href="#retter">menu</a></li>
+                        <li><a href="#footer">kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="desktopmenu">
+                <a href="#reservationer">reservationer</a>
+                <a href="#retter">menu</a>
+                <a href="#footer">kontakt</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="streg"><img src="billeder/stregart-03.png" alt="streg"></div>
+
+        <section id="reservationer">
+            <h1>Reservationer</h1>
+
+            <div class="reservation-container">
+                <div class="grid-item">
+                    <p>Det franske køkken er i dag en integreret og uadskillig del af den franske kultur.</p>
+                    <p>Finere fransk madlavning er i manges øjne essensen af ordet gourmet og kogegunsten inspirerer professionelle og madentusiastiske amatører verden over.</p>
+                    <p>Når jeg tænker på mine sommerferier i Frankrig, er laven- delmarkerne noget af det første jeg ser for mit indre blik. De uendelige og unikke bakkede marker så langt øjet rækker. Det er herfra inspirationen til min franske gourmetrestaurant kommer. Navnet la Petite Lavende betyder direkte oversat ‘den lille lavendel’ og både farven og blomsten skal gå igen på hele mit site.</p>
+                    <p>Bon Appétit!</p>
+                </div>
+                <div class="grid-item"><img src="billeder/lavendel.jpg" alt="Lavendel"></div>
+                <div class="grid-item"><img src="billeder/macarons.jpg" alt="Macarons"></div>
+                <div class="grid-item"><img src="billeder/eiffel.jpg" alt="Eiffel"></div>
+                <div class="grid-item"><img src="billeder/krydderier.jpg" alt="Krydderier"></div>
+            </div>
+        </section>
+
+        <div class="streg"><img src="billeder/stregart-03.png" alt="streg"></div>
+
+
+        <section id="oversigt" class="menu">
+            <h1>Menu</h1>
+            <button class="filter valgt" data-hold="alle">Alle</button>
+            <button class="filter" data-hold="les entrees">les Entrées</button>
+            <button class="filter" data-hold="les plats principaux">les Plats Principaux</button>
+            <button class="filter" data-hold="les desserts">les Desserts</button>
+        </section>
+        <section class="data-container"></section>
+    </main>
+    <footer>
+        <section id="footer">
+            <div>la Petite Lavende <br>Glasvej 7<br>2400 København NV </div>
+            <div>Åbningstider: <br>Søndag – torsdag 17:30 – 23:00<br>Fredag - lørdag 17:30 – 24:00</div>
+        </section>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Gå til top</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
