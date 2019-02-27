@@ -3,7 +3,25 @@ let filter = "alle";
 
 document.addEventListener("DOMContentLoaded", hentJson);
 
+const mq = window.matchMedia("(min-width: 1000px)");
 
+function desktopPil() {
+    if (mq.matches) { // If media query matches
+        document.querySelector(".desktoppil").style.display = "block";
+    } else {
+        document.querySelector(".desktoppil").style.display = "none";
+    }
+}
+
+//desktopPil(); // Call listener function at run time
+mq.addListener(desktopPil); // Attach listener function on state changes
+
+
+//function desktopPil() {
+//    document.querySelector(".desktoppil").style.display = "block";
+//}
+
+setTimeout(desktopPil, 7000);
 
 
 
@@ -47,7 +65,7 @@ function visRetter() {
             let template = `
                     <article class="retter">
                         <div class="item-a item-retter">
-                        <img src="img/${ret.billede}.jpg" alt="${ret.navn}">
+                        <img src="img/sm/${ret.billede}.jpg" alt="${ret.navn}">
                         </div>
                         <div class="item-b item-retter">
                         <h2>${ret.navn}</h2>
@@ -82,6 +100,8 @@ function visRetter() {
 
             function close() {
                 document.querySelector("#popup").style.display = "none";
+                document.querySelector("#nav").style.display = "block";
+                document.querySelector("#myBtn").style.display = "block";
             }
 
         }
@@ -103,7 +123,6 @@ function filtrering() {
 }
 
 visRetter();
-
 
 
 // When the user scrolls down 20px from the top of the document, show the button

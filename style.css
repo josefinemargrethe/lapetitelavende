@@ -26,7 +26,7 @@ a {
     color: black;
     font-family: 'peignot';
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 a:hover {
@@ -71,25 +71,30 @@ li {
 
 .ipadcover {
     display: none;
+    opacity: 0.6;
 }
 
-/*
-.overlay {
-    position: relative;
-    width: 100vw;
-    height: 48.25vw;
-    background: #b1b1ea;
-        background: #8c76a8;
-    opacity: 0.8;
-    margin-bottom: 10vw;
+.iphonecover {
+    opacity: 0.6;
 }
-*/
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 178.25vw;
+        background: #bbaad0;
+        /*        background: #b1b1ea;*/
+        /*    background: #8c76a8;*/
+        opacity: 0.8;
+        margin-bottom: 10vw;
+    }
 
 .iphonelogo {
     position: absolute;
-    top: 20vw;
-    left: 30vw;
-    max-width: 70%;
+    top: 30vw;
+    left: 10vw;
+    max-width: 80%;
 }
 
 .ipadlogo {
@@ -100,12 +105,49 @@ li {
     display: none;
 }
 
+.iphonepil {
+    position: absolute;
+    max-width: 25%;
+    top: 160vw;
+    left: 39vw;
+    opacity: 0.4;
+}
+
+.ipadpil {
+    display: none;
+}
+
+.desktoppil {
+    display: none;
+}
+
+.pulse1 {
+    animation-name: pulse1_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse1_kf {
+    0% {
+        transform: scale(0.90);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 /************* STREG ****************/
 
 .streg {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin-top: 10vw;
 }
 
 .streg img {
@@ -128,9 +170,14 @@ li {
     max-width: 150px;
 }
 
+.om-overskrift {
+    margin-top: 10vw;
+    text-align: center;
+}
+
 .om-container {
     padding: 10px;
-    margin: 10vw 10vw;
+    margin: 0 10vw 0;
 
 }
 
@@ -337,6 +384,8 @@ footer h1 {
     display: block;
 }
 
+/******************** MEDIA QUERIES  **********************/
+
 
 @media only screen and (min-width:600px) {
     .iphonecover {
@@ -358,10 +407,40 @@ footer h1 {
     .ipadlogo {
         display: block;
         position: absolute;
-        top: 25vw;
-        left: 50vw;
-        max-width: 50%;
+        top: 15vw;
+        left: 20vw;
+        max-width: 60%;
     }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 133.25vw;
+        background: #bbaad0;
+        /*        background: #b1b1ea;*/
+        /*    background: #8c76a8;*/
+        opacity: 0.8;
+        margin-bottom: 10vw;
+    }
+
+    .iphonepil {
+        display: none;
+    }
+
+    .desktoppil {
+        display: none;
+    }
+
+    .ipadpil {
+        display: block;
+        position: absolute;
+        max-width: 25%;
+        top: 115vw;
+        left: 40vw;
+        opacity: 0.4;
+    }
+
 
     .om-container {
         display: grid;
@@ -406,6 +485,7 @@ footer h1 {
 
     nav a {
         padding: 0 1rem;
+        font-size: 2rem;
     }
 
     button {
@@ -485,6 +565,7 @@ footer h1 {
         width: 100vw;
         height: 56.25vw;
         background-image: url(billeder/parisspriteny.svg);
+        opacity: 0.6;
     }
 
     .overlay {
@@ -519,6 +600,19 @@ footer h1 {
         max-width: 50vw;
     }
 
+    .ipadpil {
+        display: none;
+    }
+
+    .desktoppil {
+        display: none;
+        position: absolute;
+        max-width: 10%;
+        top: 43vw;
+        left: 44vw;
+        opacity: 0.1;
+    }
+
     /************************ GRID ***************************/
 
 
@@ -531,6 +625,7 @@ footer h1 {
     #om img {
         max-width: 150px;
     }
+
 
     .data-container {
         grid-template-columns: repeat(2, 1fr);
