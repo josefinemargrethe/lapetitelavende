@@ -78,17 +78,17 @@ li {
     opacity: 0.6;
 }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 178.25vw;
-        background: #bbaad0;
-        /*        background: #b1b1ea;*/
-        /*    background: #8c76a8;*/
-        opacity: 0.8;
-        margin-bottom: 10vw;
-    }
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 178.25vw;
+    background: #bbaad0;
+    /*        background: #b1b1ea;*/
+    /*    background: #8c76a8;*/
+    opacity: 0.8;
+    margin-bottom: 10vw;
+}
 
 .iphonelogo {
     position: absolute;
@@ -221,6 +221,7 @@ h1 {
 .retter {
     border: 1px black solid;
     margin: 1em;
+    cursor: pointer;
 }
 
 .item-retter {
